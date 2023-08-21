@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mercado Liebre - Registro</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+</head>
+<body>
+    <header class="bg-yellow p-1 flex flex-wrap">
+        <div class="w-50 main-header-top-bar">
+            <img src="/images/logo-mercado-liebre.svg" alt="Mercado Liebre" />
+        </div>
+        <div class="p-2 w-50 align-center">
+            <form action="/" class="p-1 flex radius-1 bg-white">
+                <input class="flex-grow b-none outline-none font-xl" type="text" name="search"
+                    placeholder="Buscá productos por nombre, marcas o palabras clave"> <!-- Aca tengo un problema: Cuando bajo de 300 y pico de px en reactive, se me descompagina el search bar, se sale del form -->
+                <button type="submit" class="bg-white b-none">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        <p class="w-100 my-1 copy-header"> <!--text-center-->
+            <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin
+            tarjeta de crédito
+        </p>
+        <nav class="hide main-navbar">
+            <ul class="py-1 left-navbar">
+                <li><a class="nav-link" href="#">Ofertas</a></li>
+                <li><a class="nav-link" href="#">Tiendas Oficiales</a></li>
+                <li><a class="nav-link" href="#">Vender</a></li>
+                <li><a class="nav-link" href="#">Ayuda</a></li>
+            </ul>
+            <ul class="py-1 right-navbar">
+                <li>
+                    <a class="nav-link" href="/register">Crea tu cuenta <i class="fa-solid fa-address-card"></i></a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a> <!-- VER no funciona el link -->
+                </li>
+                <li>
+                    <a class="nav-link" href="#">Mis Compras <i class="fa-solid fa-basket-shopping"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="text-center w-100 hamburguer-button">
+            <i class="fa-solid fa-bars p-1 bg-blue radius-1 color-white bold"></i>
+        </div>
+    </header>
+    
+    <main>
+        <form action="" method="GET" class="bg-gray flex flex-direction flex-justify text-center">
+
+            <div class="container">
+              <div class="p-2 vw-90 font1">
+                <input type="text" name="user" id="user" placeholder="Nombre de Usuario" class="font1 radius-1 w-100 mw h25" required pattern="\w{2,}" title="El nombre de Usuario debe tener al menos 2 letras">
+              </div>
+          
+              <div class="p-2 vw-90 font1">
+                <input type="password" name="password" id="password" placeholder="Contraseña" class="font1 radius-1 w-100 mw h25" required pattern=".{6,}" title="La contraseña deberá tener al menos 6 letras">
+              </div>
+          
+              <div class="p-2 vw-90 font1">
+                <button type="submit" value="Enviar" class="button-send w-100 flex-grow mw" formaction="/"> Enviar </button>
+              </div>
+            </div>
+          
+          </form>
+    
+           
+    <footer class="flex flex-row">
+            <ul class="text-center flex flex-row">
+                <li class="my-1"> <i class="fa-solid fa-credit-card fa-xl text-center w-100 lm" style="color: #03264c;"></i> <p class = "bold">Pagá con tarjeta o en efectivo<p class=""> Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p></p></li>
+    
+                    
+                <li class="my-1"> <i class="fa-solid fa-gift fa-xl text-center w-100 lm" style="color: #03264c;"></i><p class="bold">Envío gratis desde $ 2.500<p class="">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p></p></li>
+    
+                     
+                <li class="my-1"><i class="fa-solid fa-user-shield fa-xl text-center w-100 lm" style="color: #03264c;"></i> <p class="bold">Seguridad, de principio a fin <p class="">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p></p></li>
+            </ul>
+            
+    
+    </footer>
+<p class="align-left">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        
+</body>
+</html>
+       
+        
+       
+        
+        
+           
+        
+
+
+
